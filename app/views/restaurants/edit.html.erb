@@ -1,2 +1,11 @@
-<h1>Restaurants#edit</h1>
-<p>Find me in app/views/restaurants/edit.html.erb</p>
+
+<h1> restaurant you want to delete :</h1>
+
+
+<%= simple_form_for [@restaurant] do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :category %>
+  <%= f.submit "add", class: "btn btn-primary" %>
+<% end %>
+
